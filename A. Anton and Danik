@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    int n,count1 =0,count2 =0;
+    char ch;
+    
+    cin>>n;
+    
+    for(int i=0; i<n; i++){
+        cin>>ch;
+        
+    
+        if(ch=='A'){
+            count1++;
+        }else if(ch=='D'){
+            count2++;
+        }
+    }
+    
+    if(count1>count2){
+        cout<<"Anton"<<endl;
+    }else if(count2>count1){
+        cout<<"Danik"<<endl;
+    }else {
+        cout<<"Friendship"<<endl;
+    }
+    
+   
+ 
+    
+ 
+    return 0;
+}
